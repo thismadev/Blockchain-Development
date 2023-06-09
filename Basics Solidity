@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18; // stating our version
+
+contract SimpleStorage {
+    // Basic Types: booblean, uint, int, address, bytes
+    bool hasFavouriteNumber = true;
+    uint public favoriteNumber = 88; 
+    // int puede ser un numero negativo
+    string favoriteText = "Hello memewy";
+    address myAddress ;
+    bytes favoriteBytes = "cat";
+
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
+}
